@@ -18,33 +18,31 @@
             <table class="styletb">
                 <tbody>
                 <div class="form-group">
-                    <label for="tieude_blog">Tên món ăn:</label>
-                    <input type="text" id="tieude_blog" name="tieude_blog" required class="form-control" placeholder="Nhập tên món ăn">
+                    <label for="tieude_blog">Mã voucher:</label>
+                    <input type="text" id="tieude_blog" name="tieude_blog" required class="form-control" placeholder="Nhập mã voucher">
                 </div>
                 <div class="form-group">
-                    <label for="giamon">Giá món ăn</label>
-                    <input type="text" id="giamon" name="giamon" required class="form-control" placeholder="Nhập giá bán">
+                    <label for="giamon">Tên voucher</label>
+                    <input type="text" id="giamon" name="giamon" required class="form-control" placeholder="Nhập tên voucher">
                 </div>
                 <div class="form-group">
-                    <label for="nguyenlieu">Nguyên liệu</label>
-                    <input type="text" id="nguyenlieu" name="nguyenlieu" required class="form-control" placeholder="Chọn nguyên liệu">
+                    <label for="nguyenlieu">Mức ưu đãi</label>
+                    <input type="text" id="nguyenlieu" name="nguyenlieu" required class="form-control" placeholder="Chọn mức ưu đãi">
                 </div>
                 <div class="form-group">
-                    <label for="noidung_blog">Quy trình chế biến:</label>
-                    <textarea id="noidung_blog" name="noidung_blog" rows="5" required class="form-control" placeholder="Nhập quy trình chế biến"></textarea>
+                    <label for="noidung_blog">Thời gian:</label>
+                    <label for="startDate">Ngày bắt đầu:</label>
+                <input type="date" id="startDate" name="startDate" required><br><br>
+
+                <!-- Chọn Ngày Kết Thúc -->
+                <label for="endDate">Ngày kết thúc:</label>
+                <input type="date" id="endDate" name="endDate" required><br><br>
+  
+                <input type="submit" value="Xác nhận" style="margin-left: auto"><br><br>
                 </div>
-                    <tr>
-                        <td><label for="anh1_blog">Hình ảnh 1:</label></td>
-                        <td><input type="file" id="anh1_blog" name="anh1_blog"><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="anh2_blog">Hình ảnh 2:</label></td>
-                        <td><input type="file" id="anh2_blog" name="anh2_blog"><br></td>
-                    </tr>
-                    <tr>
-                        <td><label for="anh3_blog">Hình ảnh 3:</label></td>
-                        <td><input type="file" id="anh3_blog" name="anh3_blog"><br></td>
-                    </tr>
+                
+                </div>
+                    
                 </tbody>
             </table>
             <input type="submit" name="btn" value="Lưu món ăn" class="btn btn-primary">
@@ -54,11 +52,11 @@
 
 
     <div class="card-header py-3 d-flex justify-content-between">
-        <h6 class="m-0 font-weight-bold text-primary">Danh sách món ăn</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Danh sách voucher</h6>
         <div class="ml-auto">
                  <!-- Thêm sản phẩm-->
             <form action="post">
-                <input type="button" value="Thêm món ăn" id="btnShowBlog" class="btn btn-primary">
+                <input type="button" value="Thêm voucher" id="btnShowBlog" class="btn btn-primary">
             </form>    
             <script>
             var btnShowBlog = document.getElementById("btnShowBlog");
@@ -86,9 +84,9 @@
                     <thead>
                         <tr>
                             <th>STT</th>
-                            <th>Tên món ăn</th>
+                            <th>ID</th>
+                            <th>Tên khuyến mãi</th>
                             <th>Trạng thái</th>
-                            <th>Ảnh</th>
                             <th>Chi tiết</th>
                         </tr>
                     </thead>
