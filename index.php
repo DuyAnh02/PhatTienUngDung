@@ -15,21 +15,21 @@
         <!--<< Favcion >>-->
         <link rel="shortcut icon" href="assets/img/logo/favicon.svg">
         <!--<< Bootstrap min.css >>-->
-        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
         <!--<< Font Awesome.css >>-->
-        <link rel="stylesheet" href="assets/css/font-awesome.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
         <!--<< Animate.css >>-->
-        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="css/animate.css">
         <!--<< Magnific Popup.css >>-->
-        <link rel="stylesheet" href="assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="css/magnific-popup.css">
         <!--<< MeanMenu.css >>-->
-        <link rel="stylesheet" href="assets/css/meanmenu.css">
+        <link rel="stylesheet" href="css/meanmenu.css">
         <!--<< Swiper Bundle.css >>-->
-        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="css/swiper-bundle.min.css">
         <!--<< Nice Select.css >>-->
-        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="css/nice-select.css">
         <!--<< Main.css >>-->
-        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="css/main.css">
         <!--<< Style.css >>-->
         <link rel="stylesheet" href="style.css">
 </head>
@@ -47,7 +47,7 @@
                     </form>
                     <div class="middle-header-logo">
                         <a href="index.html">
-                        <img src="assets/img/logo/Diamond.png" alt="" width="181" height="150">
+                        <img src="img/logo/Diamond.png" alt="" width="181" height="150">
                         </a>
                     </div>
                     <div class="middle-header-right">
@@ -60,35 +60,6 @@
                         </div>
                         <div class="menu-cart">
                             <div class="cart-box">
-                                <ul>
-                                    <li>
-                                        <img src="assets/img/shop-food/s2.png" alt="image">
-                                        <div class="cart-product">
-                                            <a href="#0">grilled chiken</a>
-                                            <span>168$</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul>
-                                    <li class="border-none">
-                                        <img src="assets/img/shop-food/s3.png" alt="image">
-                                        <div class="cart-product">
-                                            <a href="#0">grilled chiken</a>
-                                            <span>168$</span>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="shopping-items d-flex align-items-center justify-content-between">
-                                    <span>Shopping : $20.00</span>
-                                    <span>Total : $168.00</span>
-                                </div>
-                                <div class="cart-button d-flex justify-content-between mb-4">
-                                    <a href="shop-cart.html" class="theme-btn">
-                                    View Cart
-                                    </a>
-                                    <a href="checkout.html" class="theme-btn bg-red-2">
-                                    Checkout
-                                    </a>
                                 </div>
                             </div>
                             <a href="shop-cart.html" class="cart-icon">
@@ -125,61 +96,16 @@
                                             <li class="has-dropdown">
                                                 <a href="shop.html">
                                                 Shop
-                                                <i class="fas fa-angle-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="shop.html">Shop Grid</a></li>
-                                                    <li><a href="shop-list.html">Shop List</a></li>
-                                                    <li><a href="shop-left-sidebar.html">Shop Left SideBar</a></li>
-                                                    <li><a href="shop-right-sidebar.html">Shop Right SideBar</a></li>
-                                                    <li><a href="shop-single.html">Shop Single</a></li>
-                                                    <li><a href="shop-single-2.html">Shop Single 2</a></li>
-                                                    <li><a href="shop-cart.html">Shop Cart</a></li>
-                                                    <li><a href="checkout.html">checkout</a></li>
-                                                </ul>
+                                                
                                             </li>
                                             <li>
                                                 <a href="news.html">
                                                 Blog
-                                                <i class="fas fa-angle-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="news.html">Blog</a></li>
-                                                    <li><a href="news-details.html">Blog Details</a></li>
-                                                </ul>
                                             </li>
                                             <li class="has-dropdown">
                                                 <a href="news.html">
                                                 Pages
-                                                <i class="fas fa-angle-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li class="has-dropdown">
-                                                        <a href="team.html">
-                                                        Chef Page
-                                                        <i class="fas fa-angle-down"></i>
-                                                        </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="team.html">Chef</a></li>
-                                                            <li><a href="team-details.html">Chef Details</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li class="has-dropdown">
-                                                        <a href="food-menu.html">
-                                                        Food Menu
-                                                        <i class="fas fa-angle-down"></i>
-                                                        </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="food-menu.html"> Food Menu 01</a></li>
-                                                            <li><a href="food-menu-2.html"> Food Menu 02</a></li>
-                                                        </ul>
-                                                    </li>
-                                                    <li><a href="gallery.html">Gallery</a></li>
-                                                    <li><a href="testimonial.html">testimonial</a></li>
-                                                    <li><a href="reservation.html">Reservation</a></li>
-                                                    <li><a href="faq.html">Faq's</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
-                                                </ul>
+                                                
                                             </li>
                                             <li>
                                                 <a href="contact.html">Contact</a>
@@ -199,21 +125,101 @@
                 </div>
             </div>
         </header>
-        <section class="hero-section-5 fix hero-6 section-padding bg-cover" style="background-image: url('assets/img/banner/main-bg.jpg');">
+        <section class="hero-section-5 fix hero-6 section-padding bg-cover" style="background-image: url('img/banner/main-bg.jpg');">
             <div class="hero-shape">
-                <img src="assets/img/hero-6/hero/hero-shape.png" alt="shape-img">
+                <img src="img/hero-6/hero/hero-shape.png" alt="shape-img">
             </div>
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="hero-content">
-                            <h3 class="wow fadeInUp" data-wow-delay=".3s">Today's Best Deal</h3>
-                            <h1 class="wow fadeInUp" data-wow-delay=".5s">italian food</h1>
-                            <h2 class="wow fadeInUp" data-wow-delay=".7s">Super Delicious</h2>
+                            <h3 >Xin chào quý khách</h3>
+                            <h1 >Diamond Fast Food</h1>
+                            <h2 >Super Delicious</h2>
                         </div>
                         <div class="hero-image wow fadeInUp" data-wow-delay=".4s">
-                            <img src="assets/img/hero-6/hero/02.png" alt="img">
+                            <img src="img/hero-6/hero/02.png" alt="img">
                         </div>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="food-menu-section pt-80 pb-80">
+            <div class="container">
+                <div class="section-title text-center mb-0">
+                    <h4 class="menu-title wow fadeInUp" data-wow-delay=".3s">menu</h4>
+                </div>
+                <div class="food-menu-card-wrapper pt-5">
+                    <div class="food-menu-card-items wow fadeInUp">
+                        <div class="menu-thumb">
+                            <a href="shop-right-sidebar.html">
+                                <img src="img/hero-6/menu/01.png" alt="img">
+                            </a>
+                        </div>
+                        <h5 class="title">
+                            <a href="shop-right-sidebar.html">Burger</a>
+                        </h5>
+                    </div>
+                    <div class="food-menu-card-items wow fadeInUp" data-wow-delay=".2s">
+                        <div class="menu-thumb">
+                            <a href="shop-right-sidebar.html">
+                                <img src="img/hero-6/menu/02.png" alt="img">
+                            </a>
+                        </div>
+                        <h5 class="title">
+                            <a href="shop-right-sidebar.html">Pizza</a>
+                        </h5>
+                    </div>
+                    <div class="food-menu-card-items wow fadeInUp" data-wow-delay=".4s">
+                        <div class="menu-thumb">
+                            <a href="shop-right-sidebar.html">
+                                <img src="img/hero-6/menu/03.png" alt="img">
+                            </a>
+                        </div>
+                        <h5 class="title">
+                            <a href="shop-right-sidebar.html">Comboo</a>
+                        </h5>
+                    </div>
+                    <div class="food-menu-card-items wow fadeInUp" data-wow-delay=".5s">
+                        <div class="menu-thumb">
+                            <a href="shop-right-sidebar.html">
+                                <img src="img/hero-6/menu/04.png" alt="img">
+                            </a>
+                        </div>
+                        <h5 class="title">
+                            <a href="shop-right-sidebar.html">chicken</a>
+                        </h5>
+                    </div>
+                    <div class="food-menu-card-items wow fadeInUp" data-wow-delay=".6s">
+                        <div class="menu-thumb">
+                            <a href="shop-right-sidebar.html">
+                                <img src="img/hero-6/menu/05.png" alt="img">
+                            </a>
+                        </div>
+                        <h5 class="title">
+                            <a href="shop-right-sidebar.html">Seafood</a>
+                        </h5>
+                    </div>
+                    <div class="food-menu-card-items wow fadeInUp" data-wow-delay=".7s">
+                        <div class="menu-thumb">
+                            <a href="shop-right-sidebar.html">
+                                <img src="img/hero-6/menu/06.png" alt="img">
+                            </a>
+                        </div>
+                        <h5 class="title">
+                            <a href="shop-right-sidebar.html">biryani</a>
+                        </h5>
+                    </div>
+                    <div class="food-menu-card-items wow fadeInUp" data-wow-delay=".8s">
+                        <div class="menu-thumb">
+                            <a href="shop-right-sidebar.html">
+                                <img src="img/hero-6/menu/07.png" alt="img">
+                            </a>
+                        </div>
+                        <h5 class="title">
+                            <a href="shop-right-sidebar.html">Roll</a>
+                        </h5>
                     </div>
                 </div>
             </div>
