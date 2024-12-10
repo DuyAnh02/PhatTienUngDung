@@ -1,0 +1,80 @@
+.product-card {
+    max-width: 100%;
+    border: 1px solid #ddd; /* Đường viền cho sản phẩm */
+    border-radius: 8px; /* Bo tròn góc */
+    padding: 10px; /* Khoảng cách bên trong */
+    margin-bottom: 20px; /* Khoảng cách dưới mỗi sản phẩm */
+    text-align: center; /* Canh giữa nội dung */
+    background-color: #fff; /* Màu nền trắng */
+    transition: transform 0.3s; /* Hiệu ứng khi hover */
+}
+
+.product-card:hover {
+    transform: scale(1.05); /* Tăng kích thước khi hover */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Đổ bóng cho sản phẩm */
+}
+
+.img_product {
+    height: 150px; /* Chiều cao hình ảnh */
+    margin-bottom: 10px; /* Khoảng cách dưới hình ảnh */
+}
+
+.img_product img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng ô */
+    max-height: 100%; /* Đảm bảo hình ảnh không vượt quá chiều cao ô */
+    object-fit: contain; /* Giữ tỷ lệ hình ảnh */
+}
+
+.img_product img:hover {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng ô */
+    max-height: 100%; /* Đảm bảo hình ảnh không vượt quá chiều cao ô */
+    object-fit: contain; /* Giữ tỷ lệ hình ảnh */
+}
+
+.name_product {
+    font-size: 16px; /* Kích thước chữ tên sản phẩm */
+    font-weight: bold; /* Chữ in đậm */
+    margin: 5px 0; /* Khoảng cách trên và dưới */
+    min-height: 48px ;
+}
+
+.gia_product, .giagiam_product {
+    font-weight: bold;
+    font-size: 14px; /* Kích thước chữ cho giá */
+    color: #333; /* Màu chữ */
+    margin: 5px 0; /* Khoảng cách trên và dưới */
+}
+
+.gia_product {
+    color: rgb(138, 14, 14); /* Màu đỏ cho giá khuyến mãi */
+    text-decoration: line-through; /* Gạch ngang cho giá cũ */
+}
+
+.mua {
+    margin-top: 10px; /* Khoảng cách trên nút mua */
+}
+
+.btn-buy {
+    background-color: #007bff; /* Màu nền cho nút */
+    color: #fff; /* Màu chữ */
+    border: none; /* Không đường viền */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo tròn góc cho nút */
+    cursor: pointer; /* Con trỏ chuột khi hover */
+    transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền */
+}
+
+.btn-buy:hover {
+    background-color: #0056b3; 
+    background-color: #f1d222;/* Màu nền khi hover */
+}
+
+
+.navbar-nav .nav-link {
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu */
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: rgba(14, 13, 65, 0.158); /* Màu nền khi hover */
+    
+}

@@ -1,8 +1,7 @@
 <!-- Begin Page Content -->
+
 <div class="container-fluid">
-<?php
-    echo'Xin chào';
-?>
+
 <div class="card shadow mb-4">
 
 <div class="container-add" id="popupFormBlog" >
@@ -19,6 +18,8 @@
                 <tbody>
                 <div class="form-group">
                     <label for="tieude_blog">Tên món ăn:</label>
+                    
+                    
                     <input type="text" id="tieude_blog" name="tieude_blog" required class="form-control" placeholder="Nhập tên món ăn">
                 </div>
                 <div class="form-group">
