@@ -1,4 +1,4 @@
-
+<?php require('../confirmlogin.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,6 +10,8 @@
 
     <title>AdminDashboard</title>
 
+    <link rel="stylesheet" href="../../css/style.css">
+
     <!-- Custom fonts for this template-->
     <link href="../../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link
@@ -18,12 +20,12 @@
 
     <!-- Custom styles for this template-->
     <link href="../../css/sb-admin-2.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/style.css">
 
+    <!-- Custom styles for this page -->
+    <link href="../../vendor/datatables/dataTables.bootstrap4.min.css" rel="stylesheet">
 </head>
 
 <body id="page-top">
-
     <!-- Page Wrapper -->
     <div id="wrapper">
 
@@ -40,11 +42,9 @@
                 <!-- Topbar -->
                <?php require("../view/topbar.php") ?>
                 <!-- End of Topbar -->
-
                 <!-- Begin Page Content -->
-                <?php require("../voucher/content.php") ?>
+                <?php require("../voucher/voucher.php") ?>
                 <!-- /.container-fluid -->
-
             </div>
             <!-- End of Main Content -->
 
@@ -66,7 +66,7 @@
     
 
     <!-- Bootstrap core JavaScript-->
-    <script src="../../vendor/jquery/jquery.min.js"></script> </script>
+    <script src="../../vendor/jquery/jquery.min.js"></script> 
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
@@ -82,13 +82,16 @@
     <script src="../../js/demo/chart-area-demo.js"></script>
     <script src="../../js/demo/chart-pie-demo.js"></script>
 
-
-    <!-- Page level plugins -->
-    <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
+     <!-- Page level plugins -->
+     <script src="../../vendor/datatables/jquery.dataTables.min.js"></script>
     <script src="../../vendor/datatables/dataTables.bootstrap4.min.js"></script>
 
     <!-- Page level custom scripts -->
     <script src="../../js/demo/datatables-demo.js"></script>
-</body>
+    <!-- JS Add product-->
+    <script src="../../js/demo/popup.js"> </script>
 
+</body>
+    
 </html>
+<?php require("../controller/ctrlproduct.php")?>

@@ -5,7 +5,7 @@
             $severname = "localhost";
             $user = "root";
             $password = "";
-            $database = "quanli_shopdt";
+            $database = "food";
             $con = mysqli_connect($severname,$user,$password,$database);
             if(!$con)
             {

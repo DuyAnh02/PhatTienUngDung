@@ -4,7 +4,7 @@ class login {
         $servername = "localhost";
         $user = "root";
         $password = "";
-        $database = "foot";
+        $database = "food";
         $con = mysqli_connect($servername, $user, $password, $database);
         if (!$con) {
             echo 'khong the ket noi csdl';

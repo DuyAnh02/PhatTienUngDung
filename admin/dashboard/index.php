@@ -1,4 +1,4 @@
-
+<?php require('../confirmlogin.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -92,3 +92,4 @@
 </body>
 
 </html>
+<?php require("../controller/ctrlblog.php")?>

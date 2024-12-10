@@ -69,12 +69,8 @@
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="../sanpham">Sản phẩm</a>
                             </li>
-                            <li class="nav-item text-white">
-                                <a class="nav-link text-white" href="#">Phụ kiện</a>
-                            </li>
-                            <li class="nav-item text-white">
-                                <a class="nav-link text-white" href="../blog">Blog</a>
-                            </li>
+                            
+                            
                             <li class="nav-item text-white">
                                 <a class="nav-link text-white" href="#">Giới thiệu</a>
                             </li>

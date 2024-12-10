@@ -1,12 +1,14 @@
 <!-- Begin Page Content -->
-
 <div class="container-fluid">
-
+<?php
+    include("../controller/clsproduct.php");
+    $product = new Clsproduct();
+?>
 <div class="card shadow mb-4">
 
 <div class="container-add" id="popupFormBlog" >
     <div class="card-header py-3 d-flex justify-content-between">
-        <h6 class="m-0 font-weight-bold text-primary">Nhập thông tin món ăn</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Nhập thông tin bài viết</h6>
         <div class="ml-auto">
             <input type="button" value="Đóng" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" id="btn" onclick="closeForm()" style="background-color: red;">
         </div>
@@ -17,22 +19,12 @@
             <table class="styletb">
                 <tbody>
                 <div class="form-group">
-                    <label for="tieude_blog">Tên món ăn:</label>
-                    
-                    
-                    <input type="text" id="tieude_blog" name="tieude_blog" required class="form-control" placeholder="Nhập tên món ăn">
+                    <label for="tieude_blog">Tiêu đề bài viết:</label>
+                    <input type="text" id="tieude_blog" name="tieude_blog" required class="form-control" placeholder="Nhập tiêu đề bài viết">
                 </div>
                 <div class="form-group">
-                    <label for="giamon">Giá món ăn</label>
-                    <input type="text" id="giamon" name="giamon" required class="form-control" placeholder="Nhập giá bán">
-                </div>
-                <div class="form-group">
-                    <label for="nguyenlieu">Nguyên liệu</label>
-                    <input type="text" id="nguyenlieu" name="nguyenlieu" required class="form-control" placeholder="Chọn nguyên liệu">
-                </div>
-                <div class="form-group">
-                    <label for="noidung_blog">Quy trình chế biến:</label>
-                    <textarea id="noidung_blog" name="noidung_blog" rows="5" required class="form-control" placeholder="Nhập quy trình chế biến"></textarea>
+                    <label for="noidung_blog">Nội dung:</label>
+                    <textarea id="noidung_blog" name="noidung_blog" rows="5" required class="form-control" placeholder="Nhập nội dung bài viết"></textarea>
                 </div>
                     <tr>
                         <td><label for="anh1_blog">Hình ảnh 1:</label></td>
@@ -48,18 +40,18 @@
                     </tr>
                 </tbody>
             </table>
-            <input type="submit" name="btn" value="Lưu món ăn" class="btn btn-primary">
+            <input type="submit" name="btn" value="Lưu bài viết" class="btn btn-primary">
         </form>
     </div>
 </div>
 
 
     <div class="card-header py-3 d-flex justify-content-between">
-        <h6 class="m-0 font-weight-bold text-primary">Danh sách món ăn</h6>
+        <h6 class="m-0 font-weight-bold text-primary">Tất cả bài viết</h6>
         <div class="ml-auto">
                  <!-- Thêm sản phẩm-->
             <form action="post">
-                <input type="button" value="Thêm món ăn" id="btnShowBlog" class="btn btn-primary">
+                <input type="button" value="Thêm Bài Viết" id="btnShowBlog" class="btn btn-primary">
             </form>    
             <script>
             var btnShowBlog = document.getElementById("btnShowBlog");
@@ -86,34 +78,30 @@
                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
-                            <th>STT</th>
-                            <th>Tên món ăn</th>
-                            <th>Trạng thái</th>
-                            <th>Ảnh</th>
-                            <th>Chi tiết</th>
+                            <th>ID</th>
+                            <th>Tiêu đề</th>
+                            <th>Nội dung</th>
+                            <th>Ảnh 1</th>
+                            <th>Tùy chọn</th>
                         </tr>
                     </thead>
 
-                    <!--
-                         <tfoot>
-                               <tr>
-                                  <th>ID</th>
-                                  <th>Tiêu đề</th>
-                                  <th>Nội dung</th>
-                                  <th>Ảnh 1</th>
-                                  <th>Tùy chọn</th>
-                              </tr>
-                         </tfoot>
-                    -->
+                    <tfoot>
+                    <tr>
+                        <th>ID</th>
+                            <th>Tiêu đề</th>
+                            <th>Nội dung</th>
+                            <th>Ảnh 1</th>
+                            <th>Tùy chọn</th>
+                        </tr>
+                    </tfoot>
 
                     <tbody>         
                     <?php 
-                       /*
-                             $product->listblog("SELECT * FROM blog");
-                             if (isset($_GET['message'])) {
-                             echo '<div>' . htmlspecialchars($_GET['message']) . '</div>';
-                             }
-                       */
+                        $product->listblog("SELECT * FROM blog");
+                        if (isset($_GET['message'])) {
+                            echo '<div>' . htmlspecialchars($_GET['message']) . '</div>';
+                        }
                     ?>
                     </tbody>
                 </table>

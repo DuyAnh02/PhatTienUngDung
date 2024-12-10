@@ -70,11 +70,10 @@
                 while($row = mysqli_fetch_array($ketqua))
                 {
                     $id_product = $row['id_product'];
-                    $id_brand = $row['id_brand'];
-                    $name_brand = $this->LayCot("SELECT name_brand FROM brand WHERE id_brand='$id_brand' limit 1 ");
+                    
                     $category = $row['category'];
                     $quantity = $row['quantity'];
-                    $sold = $row['sold'];
+                    
                     $nameproduct = $row['name_product'];
                     $price = $row['price'];
                     $price_discount = $row['price_discount'];
@@ -83,10 +82,10 @@
                     echo '<tr>
                             <td>'.$id_product.'</td>
                             <td>'.$nameproduct.'</td>
-                            <td>'.$name_brand.'</td>
+                            
                             <td>'.$category.'</td>
                             <td>'.$quantity.'</td>
-                            <td>'.$sold.'</td>
+                            
                             <td><img src="../../img/'.$img_product.'"  width="25px"></td>
                             <td>
                                  <form action="" method="post">
@@ -98,7 +97,38 @@
                 }
             }
         }
+        public function xuatvoucher($sql)
+        {
+            $link = $this->connect();
+            $ketqua = mysqli_query($link, $sql);
+            $i = mysqli_num_rows($ketqua);
+            if($i>0)
+            {
+                while($row = mysqli_fetch_array($ketqua))
+                {
+                    $id_voucher = $row['id_voucher'];    
+                    $ten_voucher = $row['ten_voucher'];                   
+                    $ma_voucher = $row['ma_voucher'];
+                    $so_luong = $row['so_luong'];
+                    
 
+                    echo '<tr>
+                            <td>'.$id_voucher.'</td>
+                            <td>'.$ten_voucher.'</td>                           
+                            <td>'.$ma_voucher.'</td> 
+                            <td>'.$so_luong.'</td>                           
+                            
+                            <td>
+                                 <form action="" method="post">
+                                    <input type="hidden" value="'.$id_voucher.'" id="id_voucher" name="id_voucher">
+                                    <input type="submit" name="btn-xoa" id="btn-xoa" value="Xóa" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" style="background-color: red;">
+                                    <input type="button" value="Sửa" class="d-none d-sm-inline-block btn btn-sm btn-secondary shadow-sm" id="btn" style="background-color: green;">
+                                </form>
+                            </tr>';
+                }
+            }
+        }
+        
         public function xuatorder($sql)
         {
             $link = $this->connect();
